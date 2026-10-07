@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bala Ji Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🍴 Bala Ji <span>Restaurant</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button onclick="orderNow()">Order Now</button>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO</p>
+
+            <h1>
+                Bala Ji
+                <span>Restaurant</span>
+            </h1>
+
+            <p>
+                स्वादिष्ट खाना, बेहतरीन स्वाद और
+                परिवार के साथ यादगार पल।
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="showMenu()">
+                    View Menu
+                </button>
+
+                <button class="outline-btn"
+                        onclick="bookTable()">
+                    Book a Table
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="food-card">
+            🍛
+            <h2>Delicious Food</h2>
+            <p>Fresh • Tasty • Hygienic</p>
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu">
+
+        <p class="title">OUR SPECIAL MENU</p>
+
+        <h2>Our <span>Popular Dishes</span></h2>
+
+        <div class="menu-container">
+
+            <div class="food-item">
+                <div class="food-image">🍕</div>
+                <h3>Pizza</h3>
+                <p>Fresh & cheesy pizza</p>
+                <strong>₹199</strong>
+                <br><br>
+                <button onclick="addToCart('Pizza')">
+                    Add to Order
+                </button>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">🍔</div>
+                <h3>Burger</h3>
+                <p>Delicious crispy burger</p>
+                <strong>₹129</strong>
+                <br><br>
+                <button onclick="addToCart('Burger')">
+                    Add to Order
+                </button>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image">🍛</div>
+                <h3>Special Thali</h3>
+                <p>Complete Indian meal</p>
+                <strong>₹249</strong>
+                <br><br>
+                <button onclick="addToCart('Special Thali')">
+                    Add to Order
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+
+        <p class="title">ABOUT US</p>
+
+        <h2>Why Choose <span>Bala Ji?</span></h2>
+
+        <div class="features">
+
+            <div>
+                <h3>🥗 Fresh Food</h3>
+                <p>
+                    Fresh ingredients और स्वादिष्ट खाना।
+                </p>
+            </div>
+
+            <div>
+                <h3>👨‍🍳 Expert Chefs</h3>
+                <p>
+                    हमारे experienced chefs द्वारा तैयार खाना।
+                </p>
+            </div>
+
+            <div>
+                <h3>❤️ Family Friendly</h3>
+                <p>
+                    परिवार और दोस्तों के साथ enjoy करें।
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <p class="title">CONTACT US</p>
+
+        <h2>Visit <span>Bala Ji Restaurant</span></h2>
+
+        <p>
+            📍 Your Restaurant Address, India
+        </p>
+
+        <p>
+            📞 +91 XXXXX XXXXX
+        </p>
+
+        <button onclick="bookTable()">
+            Book Your Table
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🍴 Bala Ji Restaurant</h3>
+
+        <p>
+            © 2026 Bala Ji Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
